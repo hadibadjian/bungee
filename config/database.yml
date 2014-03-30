@@ -56,7 +56,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: bungee_production
+  database: dcse43bsjqrsqr
   pool: 5
-  username: bungee
-  password:
+  username: dgyyrfikvblxog
+  password: kYhEXlvUDlP5VNbYfV8fDRx3MD
