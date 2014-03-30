@@ -7,10 +7,10 @@ Maybe this just affected me and I had something conflicting somewhere, but I've 
 ## Install Postgres from Homebrew
 
 I love homebrew and use it for all my package management on my Mac, check out their site for more information.
-
+```
 $> brew update
 $> brew install postgres
-
+```
 ## $PATH Setup
 
 This one caught me out. Ensure that the /usr/local/bin path is before /usr/bin in your $PATH environment variable
