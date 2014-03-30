@@ -31,7 +31,11 @@ gem 'heroku'
 # 	gem 'rspec-rails'
 # end
 
+# Use specs to test the application
 gem 'rspec-rails', group: [:development, :test]
+
+# Inspect response in specs
+gem 'webrat', group: [:development, :test]
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
