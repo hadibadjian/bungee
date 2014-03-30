@@ -18,17 +18,20 @@ gem 'jbuilder', '~> 1.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.2'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-group :development do
-	gem 'heroku'
-	gem 'rspec-rails'
-end
 
-group :test do
-	gem 'rspec-rails'
-end
+gem 'heroku'
+
+# group :development do
+# 	gem 'rspec-rails'
+# end
+
+gem 'rspec-rails', group: [:development, :test]
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
