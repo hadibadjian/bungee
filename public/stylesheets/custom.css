@@ -11,6 +11,12 @@
 	border-radius:         10px;
 }
 
+/* id s */
+#home_page_logo
+{
+	height: 200px;
+}
+
 /* tags */
 body
 {
@@ -32,17 +38,48 @@ section
 	margin-top: 1em;
 	font-size:  120%;
 	padding: 20px;
+	background-color: #fff;
+}
+
+footer
+{
+	text-align: center;
+	margin-top: 10px;
+	width: 710px;
+	margin-right: auto;
+	margin-left: auto;
+	bottom: 10px;
+	position: absolute;
+}
+
+footer nav
+{
+	float: none;
 }
 
 a
 {
-	color: #09c;
+	/*color: #09c;*/
 	text-decoration: none;
+}
+
+a.sign_up_button
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 210px;
+	color: #eee;
+	background: #bbb;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 20px;
 }
 
 a:hover
 {
-	color: #069;
+	/*color: #069;*/
 	text-decoration: underline;
 }
 
@@ -86,32 +123,4 @@ nav ul li a:visited
 nav ul li a:hover
 {
 	text-decoration: underline;
-}
-
-a .sign_up_button
-{
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	text-align: center;
-	width: 190px;
-	color: #eee;
-	background: #bbb;
-	font-size: 150%;
-	font-weight: bold;
-	padding: 20px;
-}
-
-footer
-{
-	text-align: center;
-	margin-top: 10px;
-	width: 710px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-footer nav
-{
-	float: none;
 }
