@@ -1,8 +1,17 @@
+/* classes */
 .container
 {
 	width: 710px;
 }
 
+.round
+{
+	-moz-border-radius:    10px;
+	-webkit-border-radius: 10px;
+	border-radius:         10px;
+}
+
+/* tags */
 body
 {
 	background: #eff;
@@ -25,7 +34,6 @@ section
 	padding: 20px;
 }
 
-/* links */
 a
 {
 	color: #09c;
@@ -42,8 +50,6 @@ a:visited
 {
 	color: #069
 }
-
-/* navigation */
 
 nav
 {
@@ -82,8 +88,7 @@ nav ul li a:hover
 	text-decoration: underline;
 }
 
-/* sign up button */
-a.sign_up_button
+a .sign_up_button
 {
 	margin-left: auto;
 	margin-right: auto;
@@ -97,10 +102,16 @@ a.sign_up_button
 	padding: 20px;
 }
 
-/* round corners */
-.round
+footer
 {
-	-moz-border-radius:    10px;
-	-webkit-border-radius: 10px;
-	border-radius:         10px;
+	text-align: center;
+	margin-top: 10px;
+	width: 710px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+footer nav
+{
+	float: none;
 }
