@@ -24,12 +24,14 @@ gem 'sass-rails', '~> 4.0.2'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-
 gem 'heroku'
 
 # group :development do
 # 	gem 'rspec-rails'
 # end
+
+# Annotate models
+gem 'annotate', group: :development
 
 # Use specs to test the application
 gem 'rspec-rails', group: [:development, :test]
