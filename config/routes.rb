@@ -1,11 +1,13 @@
 Bungee::Application.routes.draw do
 
+  get "users/new"
   # You can have the root of your site routed with "root"
   root 'pages#home'
 
   get 'contact', to: 'pages#contact'
   get 'about',   to: 'pages#about'
   get 'help',    to: 'pages#help'
+  get 'signup',  to: 'users#new'
 
   get 'pages/home'
   
