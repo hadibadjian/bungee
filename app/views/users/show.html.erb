@@ -1,1 +1,11 @@
+<div>
+	<div>
+		<h1><%= @user.name %></h1>
+	</div>
+	<div class="sidebar">
+		<strong>Name</strong> <%= @user.name %>
+		<strong>URL</strong> <%= link_to user_path(@user), user_path(@user) %>
+	</div>
+</div>
+
 <%= @user.name %>, <%= @user.email %>
