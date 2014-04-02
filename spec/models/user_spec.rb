@@ -73,7 +73,7 @@ describe User do
   describe "passwords" do
     
   	before(:each) do
-  	  @user = User.new(@attr)
+  	  @user = User.new(@attr) #params.require(:user).permit(:name, :email, :password, :password_confirmation)
   	end
 
     it "should have a passworld attribute" do

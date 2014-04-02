@@ -30,26 +30,25 @@ gem 'heroku'
 # Temporarily using protected_attributes to enable attr_protected in Models
 gem 'protected_attributes'
 
-# Annotate models
-gem 'annotate', group: :development
+group :development do
+	# Annotate models
+	gem 'annotate'
+end
 
-# Use specs to test the application
-gem 'rspec-rails', group: [:development, :test]
+group :test do
+	gem 'factory_girl_rails'
+end
 
-# Inspect response in specs
-gem 'webrat', group: [:development, :test]
+# shared gems
+group :development, :test do
+	# Use specs to test the application
+	gem 'rspec-rails'
+
+	# Inspect response in specs
+	gem 'webrat'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
-# group :development do
-# 	gem 'rspec-rails'
-# end
