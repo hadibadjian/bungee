@@ -11,6 +11,7 @@ module ApplicationHelper
 	end
 
 	def logo
-		image_tag("logo.png", alt: "Bungee App", id: "home_page_logo" )
+		image_tag("logo.png", id: "home_page_logo",
+			                   alt: "Bungee App")
 	end
 end

@@ -57,7 +57,7 @@ production:
   adapter: postgresql
   host: localhost
   encoding: unicode
-  database: bungee_test
+  database: bungee_production
   pool: 5
   username: bungee
   password: 
