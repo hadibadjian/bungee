@@ -1,0 +1,18 @@
+<% if @user.errors.any? %>
+	
+	<div class="alert alert-danger">
+		<h3>
+			<%= pluralize(@user.errors.count, "error") %>
+			prohibited this user from being saved:
+		</h3>
+		<p>There were problem with the following fields:</p>
+		<table class="table table-condensed">
+			<% @user.errors.full_messages.each do |message| %>
+				<tr class="error">
+					<td><small><%= message %></small></td>
+				</tr>
+			<% end %>
+		</table>
+	</div>
+
+<% end %>
