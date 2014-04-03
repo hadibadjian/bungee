@@ -55,9 +55,9 @@ test:
 
 production:
   adapter: postgresql
-  host: ec2-54-225-101-4.compute-1.amazonaws.com
+  host: localhost
   encoding: unicode
-  database: dcse43bsjqrsqr
+  database: bungee_test
   pool: 5
-  username: dgyyrfikvblxog
-  password: kYhEXlvUDlP5VNbYfV8fDRx3MD
+  username: bungee
+  password: 
