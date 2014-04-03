@@ -1,25 +1,30 @@
 <h1>Sign up</h1>
 
 <%= form_for(@user) do |f| %>
-	<div class="field">
-		<%= f.label :name %><br />
-		<%= f.text_field :name %>
-	</div>
-	<div class="field">
-		<%= f.label :email %><br />
-		<%= f.text_field :email %>
-	</div>
-	<div class="field">
-		<%= f.label :password %><br />
-		<%= f.password_field :password %>
-	</div>
-	<div class="field">
-		<%= f.label :password_confirmation, "Confirmation" %><br />
-		<%= f.password_field :password_confirmation %>
-	</div>
-	<div class="actions">
-		<%= f.submit "Sign up" %>
-	</div>
+	<%= render 'shared/error_messages' %>
+	<table class="table">
+		<tr>
+			<td><%= f.label :name %></td>
+			<td><%= f.text_field :name %></td>
+		</tr>
+		<tr>
+			<td><%= f.label :email %></td>
+			<td><%= f.text_field :email %></td>
+		</tr>
+		<tr>
+			<td><%= f.label :password %></td>
+			<td><%= f.password_field :password %></td>
+		</tr>
+		<tr>
+			<td><%= f.label :password_confirmation, "Confirmation" %></td>
+			<td><%= f.password_field :password_confirmation %></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<%= f.submit "Sign up", class: "btn btn-info btn-large btn-block" %>
+			</td>
+		</tr>
+	</table>
 <% end %>
 
 <p>Find me in app/views/users/new.html.erb</p> 
